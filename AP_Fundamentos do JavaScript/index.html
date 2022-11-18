@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="./Assets/style.css">
+        <title>Pratica Integradora Desenvolvimento de Software</title>
+    </head>
+
+    <body>
+        <form class='form' id="getForm">
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text">
+
+            <br>
+
+            <label for="lastName">Sobrenome</label>
+            <input id="lastName" name="lastName" type="text">
+
+            <br>
+
+            <label for="email" >E-mail</label>
+            <input id="email" name="email" type="email">
+
+            <br>
+            
+            <h1><br>Formulário</h1>
+
+            <div id="divForm">
+                
+                <button class='button' type="button" onclick="print()">Clique aqui para imprimir!</button>
+
+            </div>
+        </form>
+    </body>
+
+    <script>
+        function print() {
+            const form = document.getElementById('getForm')
+            const div = document.getElementById('divForm')
+
+            const name = String(document.getElementById('name').value)
+            const lastName = String(document.getElementById('lastName').value)
+            const email = String(document.getElementById('email').value)
+
+            if (name.length && lastName.length && email.length)
+                return div.innerHTML = `<br/>${name}<br/>${lastName}<br/>${email}<br>`
+        }
+    </script>
+    <footer>
+        <h2>Exercício realizado por: Priscilla Braun Trevizan Tomazi</h2>
+  </footer>
+</html>

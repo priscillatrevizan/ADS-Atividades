@@ -1,0 +1,28 @@
+* {
+    background-color: rgb(224, 245, 245);
+    font-family: 'Roboto', sans-serif;
+    }
+
+form {
+    align-items: center;
+}
+
+input {
+    width: 250px;
+}
+
+button {
+    font-size: 15px;
+
+    color: white;
+    background-color: rgb(44, 165, 172);
+}
+
+h1 {
+    font-size: medium;
+}
+
+h2 {
+    color: rgb(4, 54, 38);
+    font-size: x-small;
+}
